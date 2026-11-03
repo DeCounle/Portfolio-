@@ -11,7 +11,7 @@ var P2026 = [
 ];
 var L2025 = [
   {t:"2025 project list", d:"Every project I finished in 2025", u:"https://docs.google.com/document/d/1uPMqke8hlcM9Zaa2bfoDYB9k-ydZQhJYbdV9D7Ta4bk/edit?tab=t.0"},
-  {t:"Source code on GitHub", d:"Repositories behind the 2025 work", u:"https://github.com/Counle"},
+  {t:"Source code on GitHub", d:"Repositories behind the 2025 work", u:"https://github.com/DeCounle"},
   {t:"2025 resources and case studies", d:"Briefs, designs and write-ups", u:"#"}
 ];
 /* ========================================================================================================== */
@@ -50,5 +50,4 @@ document.querySelector(".tabs").addEventListener("keydown",function(e){
   if(e.key==="ArrowRight"||e.key==="ArrowLeft"){var y=document.getElementById("tab-2026").getAttribute("aria-selected")==="true"?2025:2026;show(y);document.getElementById("tab-"+y).focus()}
 });
 show(2026);
- console.log("My portfolio JavaScript is working!");
  
