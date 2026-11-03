@@ -3,11 +3,93 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Adekunle Olowu | Product Manager and Engineer</title>
+<title>Adekunle Olowu | Product Manager and AI Builder</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"> 
+<style>
+:root{--bg:#EDF0F4;--surface:#FFFFFF;--ink:#0F1B2D;--mute:#5A6678;--line:#D5DBE4;--accent:#2347F5;--accent-ink:#FFFFFF;--ok:#0E8F63;--warn:#9A6212;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1220;--surface:#141C2E;--ink:#EAF0FA;--mute:#98A4B8;--line:#26314A;--accent:#7F98FF;--accent-ink:#0C1220;--ok:#3DD6A0;--warn:#F2C260;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0C1220;--surface:#141C2E;--ink:#EAF0FA;--mute:#98A4B8;--line:#26314A;--accent:#7F98FF;--accent-ink:#0C1220;--ok:#3DD6A0;--warn:#F2C260;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;margin:0;line-height:1.05;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.5rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0}
+header.top .name{font:800 1.15rem "Bricolage Grotesque",sans-serif;text-decoration:none}
+header.top nav{display:flex;gap:1.5rem;font-size:.95rem}
+header.top nav a{text-decoration:none;color:var(--mute)}
+header.top nav a:hover{color:var(--ink)}
+.hero{padding:4.5rem 0 3.5rem}
+.hero h1{font-weight:800;font-size:clamp(2.7rem,8vw,6rem);max-width:13ch}
+.hero p.lead{max-width:56ch;color:var(--mute);font-size:1.2rem;margin:1.75rem 0 2rem}
+.hero .intro{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:999px;font-weight:500;text-decoration:none;border:1.5px solid var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-1px)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1.5px solid var(--ink);margin-top:3.5rem}
+.stats div{padding:1.25rem 1rem 0 0}
+.stats dt{font:800 clamp(2rem,4.5vw,3.25rem)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em}
+.stats dd{margin:.4rem 0 0;color:var(--mute);font-size:.95rem}
+.stats{margin-bottom:0}
+.stats dl,dl.stats{margin-block:0}
+section{padding:4.5rem 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap;margin-bottom:2rem}
+.sec-head h2{font-weight:800;font-size:clamp(1.9rem,4.5vw,3rem)}
+.sec-head p{margin:.6rem 0 0;color:var(--mute);max-width:52ch}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:0 3rem}
+.skill{padding:1.5rem 0;border-top:1px solid var(--line)}
+.skill h3{font-size:1.4rem;font-weight:500;margin-bottom:.4rem}
+.skill p{margin:0;color:var(--mute)}
+.skill b{font-weight:500;color:var(--ink)}
+.tabs{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.25rem}
+.tabs button{font:500 .95rem "IBM Plex Sans",sans-serif;border:0;background:none;color:var(--mute);padding:.55rem 1.2rem;border-radius:999px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.sheet{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.sheet-bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:1rem 1.25rem;border-bottom:1px solid var(--line)}
+.sheet-bar strong{font:800 1.15rem "Bricolage Grotesque",sans-serif}
+.sheet-bar span{color:var(--mute);font-size:.9rem;margin-left:.6rem}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:720px;font-size:.98rem}
+th{text-align:left;font-weight:500;color:var(--mute);font-size:.88rem;padding:.7rem 1.25rem;border-bottom:1px solid var(--line);background:var(--bg)}
+td{padding:1rem 1.25rem;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td .pname{font-weight:500}
+td .pdesc{color:var(--mute);font-size:.9rem;display:block}
+.chip{display:inline-flex;align-items:center;gap:.4rem;font-size:.88rem}
+.chip::before{content:"";width:.6rem;height:.6rem;border-radius:50%;background:var(--mute)}
+.chip.shipped::before{background:var(--ok)}
+.chip.progress::before{background:var(--warn)}
+.chip.planned::before{background:transparent;border:2px solid var(--mute)}
+.bar{display:flex;align-items:center;gap:.6rem;min-width:140px}
+.bar .track{flex:1;height:.5rem;border-radius:99px;background:var(--line);overflow:hidden}
+.bar .fill{display:block;height:100%;background:var(--accent);border-radius:99px}
+.bar.done .fill{background:var(--ok)}
+.bar .pct{font-weight:500;font-variant-numeric:tabular-nums;min-width:2.6rem;text-align:right}
+.res{display:flex;flex-wrap:wrap;gap:.35rem .9rem}
+.res a{color:var(--accent);font-weight:500;text-underline-offset:3px}
+.res a.todo{color:var(--mute);font-weight:400;text-decoration-style:dashed}
+.links{list-style:none;margin:0;padding:0}
+.links li{border-bottom:1px solid var(--line)}
+.links li:last-child{border-bottom:0}
+.links a{display:flex;justify-content:space-between;gap:1rem;padding:1.1rem 1.25rem;text-decoration:none}
+.links a:hover{background:var(--bg)}
+.links .t{font-weight:500}
+.links .d{display:block;color:var(--mute);font-size:.92rem}
+.links .go{color:var(--accent);font-weight:500;white-space:nowrap}
+.contact{border-top:1.5px solid var(--ink)}
+.contact h2{font-weight:800;font-size:clamp(2.2rem,7vw,4.75rem);max-width:15ch;margin-bottom:2rem}
+footer{padding:2rem 0 3rem;color:var(--mute);font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+@media (max-width:720px){.stats{grid-template-columns:1fr 1fr;row-gap:1.5rem}.skills{grid-template-columns:1fr}header.top nav{gap:1rem}.hero{padding-top:2.5rem}}
+@media (prefers-reduced-motion:reduce){.hero .intro{animation:none}html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -15,35 +97,35 @@
     <a class="name" href="#top">Adekunle Olowu</a>
     <nav aria-label="Main"><a href="#skills">Skills</a><a href="#work">Project sheets</a><a href="#contact">Contact</a></nav>
   </header>
-
+ 
   <main id="top">
     <div class="hero">
       <div class="intro">
-        <h1>I manage the product and write the code.</h1>
-        <p class="lead">I’m a product manager and engineer with 7 years of experience building and scaling products across industries and countries.</p>
+        <h1>I manage the product and build with AI.</h1>
+        <p class="lead">I’m a product manager and AI Builder with 7 years of experience building and scaling products across industries and countries.</p>
         <div class="btns">
-          <a class="btn primary" href="#work">See the 2026 project sheet</a>
+          <a class="btn primary" href="https://docs.google.com/document/d/16eJRssXbGeM9AGDwZ_Zb8RUD-pbTsTra5HZi9_McVbM/edit?tab=t.0" target="_blank" rel="noopener">See the 2026 project sheet</a>
           <a class="btn" href="https://docs.google.com/document/d/1_gkCYeZsbAV9FCfKLCXW8LkBnVQSTFJWpiPbwe0P6Lk/edit?usp=sharing" target="_blank" rel="noopener">Read my resume</a>
         </div>
       </div>
       <dl class="stats">
         <div><dt>7 yrs</dt><dd>Product experience</dd></div>
-        <div><dt>11</dt><dd>Projects completed this year</dd></div>
+        <div><dt>8</dt><dd>Projects completed this year</dd></div>
         <div><dt>+75%</dt><dd>Average impact created</dd></div>
-        <div><dt>90 days</dt><dd>Average project time, with a team of 6</dd></div>
+        <div><dt>120 days</dt><dd>Average project time</dd></div>
       </dl>
     </div>
-
+ 
     <section id="skills" aria-labelledby="skills-h">
       <div class="sec-head"><div><h2 id="skills-h">What I do</h2></div></div>
       <div class="skills">
         <div class="skill"><h3>Agile product and project management</h3><p>Team management, A/B testing, prioritization.</p></div>
-        <div class="skill"><h3>UI/UX design</h3><p>Figma and illustration.</p></div>
+        <div class="skill"><h3>Strong understanding of UI/UX design</h3><p>Figma and illustration.</p></div>
         <div class="skill"><h3>Cloud and DevOps</h3><p>AWS, CI/CD, Docker, GitHub.</p></div>
-        <div class="skill"><h3>AI and software engineering</h3><p>Python, RAG, automation.</p></div>
+        <div class="skill"><h3>AI</h3><p>Python, RAG, automation.</p></div>
       </div>
     </section>
-
+ 
     <section id="work" aria-labelledby="work-h">
       <div class="sec-head">
         <div><h2 id="work-h">Project sheets</h2><p>Every project I’ve worked on, by year, with the resources behind it.</p></div>
@@ -54,19 +136,76 @@
       </div>
       <div class="sheet" id="panel" role="tabpanel" aria-live="polite"></div>
     </section>
-
+ 
     <section class="contact" id="contact" aria-labelledby="contact-h">
       <h2 id="contact-h">Let’s build your project.</h2>
       <div class="btns">
         <a class="btn primary" href="https://linkedin.com/in/adekunle-olowu-6b2973133/" target="_blank" rel="noopener">Message me on LinkedIn</a>
-        <a class="btn" href="https://github.com/Counle" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://github.com/DeCounle" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="https://twitter.com/counle" target="_blank" rel="noopener">Twitter</a>
       </div>
     </section>
   </main>
 </div>
-<footer><div class="wrap"><span>© 2026 Adekunle Olowu</span><span>Product manager and engineer</span></div></footer>
-
-<script src="script.js"></script>
+<footer><div class="wrap"><span>© 2026 Adekunle Olowu</span><span>Product manager and AI Builder</span></div></footer>
+ 
+<script>
+/* ===== EDIT THESE: every link and project on the page lives here. Use "#" for links you haven't added yet. ===== */
+var SHEET_2026 = "https://docs.google.com/document/d/16eJRssXbGeM9AGDwZ_Zb8RUD-pbTsTra5HZi9_McVbM/edit?tab=t.0"; /* link to your full 2026 project sheet (Google Sheet or Doc) */
+var P2026 = [
+  {name:"WhatsApp Banking", team:"EID / Digital Channel", progress:100, dep:"Nil",
+   res:[{l:"Project brief",u:"#"}]},
+  {name:"AI Loan Automation", team:"EID / CAP / EDM", progress:60, dep:"External APIs (Fintrak, Moody’s, Finacle)",
+   res:[{l:"Project brief",u:"#"}]},
+  {name:"Solar Product", team:"Personal Banking / SME Banking", progress:70, dep:"Vendor onboarding requirement",
+   res:[{l:"Project brief",u:"#"}]},
+  {name:"Autocall 360", team:"EID / BOSG", progress:80, dep:"OCR accuracy",
+   res:[{l:"Project brief",u:"#"}]}
+];
+var L2025 = [
+  {t:"2025 project list", d:"Every project I finished in 2025", u:"https://docs.google.com/document/d/1uPMqke8hlcM9Zaa2bfoDYB9k-ydZQhJYbdV9D7Ta4bk/edit?tab=t.0"},
+  {t:"2025 resources and case studies", d:"Briefs, designs and write-ups", u:"#"}
+];
+/* ========================================================================================================== */
+ 
+var panel = document.getElementById("panel");
+var STATUS = {shipped:"Shipped", progress:"In progress", planned:"Planned"};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function link(l,u){var todo=(u==="#");return '<a href="'+esc(u)+'"'+(todo?' class="todo" title="Link not added yet"':' target="_blank" rel="noopener"')+'>'+esc(l)+'</a>'}
+ 
+function render2026(){
+  var shown = P2026.slice(0,4); /* only the first 4 projects are listed */
+  var rows = shown.map(function(p){
+    var done = p.progress>=100;
+    return '<tr><td><span class="pname">'+esc(p.name)+'</span></td>'+
+      '<td>'+esc(p.team)+'</td>'+
+      '<td><div class="bar'+(done?' done':'')+'" role="img" aria-label="'+p.progress+' percent complete"><span class="track"><span class="fill" style="width:'+p.progress+'%"></span></span><span class="pct">'+p.progress+'%</span></div></td>'+
+      '<td>'+esc(p.dep)+'</td>'+
+      '<td><div class="res">'+p.res.map(function(r){return link(r.l,r.u)}).join("")+'</div></td></tr>';
+  }).join("");
+  panel.innerHTML = '<div class="sheet-bar"><div><strong>2026 project sheet</strong><span>'+shown.length+' projects</span></div>'+
+    '<a class="btn primary" '+(SHEET_2026==="#"?'':'target="_blank" rel="noopener" ')+'href="'+esc(SHEET_2026)+'">Open the full sheet</a></div>'+
+    '<div class="scroll"><table><thead><tr><th scope="col">Project</th><th scope="col">Team</th><th scope="col">Progress</th><th scope="col">Dependency</th><th scope="col">Resources</th></tr></thead><tbody>'+rows+'</tbody></table></div>';
+}
+function render2025(){
+  panel.innerHTML = '<div class="sheet-bar"><div><strong>2025 project list</strong><span>'+L2025.length+' links</span></div></div><ul class="links">'+
+    L2025.map(function(x){var todo=x.u==="#";return '<li><a href="'+esc(x.u)+'"'+(todo?'':' target="_blank" rel="noopener"')+'><span><span class="t">'+esc(x.t)+'</span><span class="d">'+esc(x.d)+'</span></span><span class="go">'+(todo?'Add link':'Open')+'</span></a></li>'}).join("")+'</ul>';
+}
+function show(year){
+  document.getElementById("tab-2026").setAttribute("aria-selected",year===2026);
+  document.getElementById("tab-2025").setAttribute("aria-selected",year===2025);
+  document.getElementById("tab-2026").tabIndex = year===2026?0:-1;
+  document.getElementById("tab-2025").tabIndex = year===2025?0:-1;
+  panel.setAttribute("aria-labelledby","tab-"+year);
+  year===2026?render2026():render2025();
+}
+document.getElementById("tab-2026").onclick=function(){show(2026);document.getElementById("work").scrollIntoView({behavior:"smooth"})};
+document.getElementById("tab-2025").onclick=function(){show(2025)};
+document.querySelector(".tabs").addEventListener("keydown",function(e){
+  if(e.key==="ArrowRight"||e.key==="ArrowLeft"){var y=document.getElementById("tab-2026").getAttribute("aria-selected")==="true"?2025:2026;show(y);document.getElementById("tab-"+y).focus()}
+});
+show(2026);
+</script>
 </body>
 </html>
+ 
